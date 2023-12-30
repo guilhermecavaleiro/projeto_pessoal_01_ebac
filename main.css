@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+h1,
+h2,
+a{
+    font-family: 'Anton', sans-serif;
+}
+
+h3,
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
 header{
     padding: 16px 0;
     background-color: black;
@@ -52,6 +63,14 @@ section{
     padding: 24px 0;
 }
 
+#updates{
+    background-image:url(./images/dbd_bg_01.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px;
+}
+
 section h2{
     margin-bottom: 16px;
 }
@@ -60,6 +79,82 @@ section p{
     margin-bottom: 12px;
 }
 
-.help .container{
+#help .container{
     display: block;
+}
+
+#help{
+    background-image:url(./images/dbd_bg_02.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px;
+}
+
+.help-methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form button{
+    display: inline;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 155px;
+    justify-content: space-between;
+}
+
+form button:hover{
+    background-color: red;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+input:focus,
+textarea:focus{
+    outline-color: red;
+}
+
+section h3{
+    margin: 16px 0;
+}
+
+#plataforms{
+    background-color: rgb(148, 8, 8);
+    color: white;
+}
+
+#plataforms .container{
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+#plataforms-list li{
+    display: inline;
+}
+
+#plataforms-list img{
+    height: 50px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 16px;
+    text-align: center;
 }
